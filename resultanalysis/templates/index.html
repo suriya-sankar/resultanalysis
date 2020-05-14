@@ -1,0 +1,39 @@
+{% extends 'extended.html' %}
+{% block codes%}
+ <div class="batch_page">
+     <div class="batches_title">
+        <div class="batches_titi">
+           BATCHES
+        </div>
+     </div>
+    {% for bat in batches %}
+    
+    
+     <div class="batch_div">
+         <a href="{% url 'semester_list' batch_id=bat.batch_year_id%}">
+         
+         <div class="batch_img">
+             <div class="batch_img_img">
+                <img src="media/{{bat.thumb}}">
+             </div>
+       
+         </div>
+         <div class="batch_details">
+             <div class="batch_name">
+               
+                    {{bat.batch_name}}
+                  
+             </div>
+             <div class="batch_years">
+            batch {{bat.starting_year}} -{{bat.ending_year}}
+             </div>
+             <div class="batch_depart_clg">
+                department of {{bat.department}}  <br>
+            {{bat.college}}
+             </div>
+         </div>
+     </div>
+     {% endfor %}
+    </a>
+ </div>
+{%endblock%}

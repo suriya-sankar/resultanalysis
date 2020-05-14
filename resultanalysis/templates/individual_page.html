@@ -1,0 +1,73 @@
+{%extends 'extended.html'%}
+{%load static%}
+   
+{% block codes%}
+<div class="batch_page">
+  
+    <div class="batches_title">
+       <div class="batches_titi">
+          EXTENDED RESULTS
+        </div>  
+          <div class="batches_extended_title">
+             <h6> results of student in all sem</h6>
+          
+       </div>
+    </div>
+    <div class="batch_details_con">
+           <div class="batch_details">
+             <div class="student_details_con">
+                 <div class="student_name">
+                     {{vall.0.1}}
+                 </div>
+                 <div class="student_register_no">
+                     {{vall.0.0}}
+                 </div>
+                 <div class="depatment">
+                     department:&nbsp;{{batch_details.department}}
+                 </div>
+                 <div class="student_batch_year">
+                     batch year:&nbsp;{{batch_details.starting_year}}-{{batch_details.ending_year}}
+                 </div>
+                 <div class="student_clg">
+                     {{batch_details.college}}
+                 </div>
+             </div>
+            
+         
+             <div class="sem_details_con">
+                
+                 <div class="sem_details">
+                     {%for sem_result,subs,sem  in my_list%}
+                   
+                       
+                    <div class="single_sem_result_con">
+                        <div class="single_sem_result">
+                            <div class="semester_number">
+                                SEMESTER &nbsp;{{sem}}
+                            </div>
+                           <table cellpadding=3 >
+                               <tr>
+                             
+                                {%for sub_val in subs%} 
+                                  
+                                <td style="min-width: 60px;">{{sub_val}}</td>
+                               {%endfor%}
+                               </tr>
+                              
+                               <tr>
+                               
+                                   {%for score in sem_result%}
+                                  
+                                    <td style="min-width: 60px;">{{score}}</td>
+                                   {%endfor%}
+                               </tr>
+                             
+                           </table>
+                        </div>
+                 </div>
+                 {%endfor%}
+             </div>
+           </div>
+    </div>
+</div> 
+{%endblock%}

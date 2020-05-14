@@ -1,0 +1,53 @@
+{% extends 'extended.html'%}
+{%load static%}
+{%block codes%}
+<div class="batch_page">
+    <div class="batches_title">
+       <div class="batches_titi">
+           {{val}} result</div>
+          
+    </div>
+    <div class="batch_details_con">
+        <div class="batch_details">
+         <div class="cont_batch_details">
+            
+         </div>
+         <div class="cont_other_details">
+             <div class="cont_batch_name">
+                
+             
+                     
+                        
+             </div>
+             <div class="cont_batch_name">
+                
+            </div>
+             </div>
+             </div>
+             </div>
+    <div class="page_details">
+        <div class="sad_emoji_con">
+            <div class="sad_emoji">
+                
+                 <img src="{% static 'sad_emoji.png'%}"> 
+            </div>
+        </div>
+        <div class="upload_con">
+            <div class="upload">
+                <h5>{{val}} result pdf not yet uploaded click 'choose file' to upload the result pdf</h5>
+            </div>
+            <div class="plus_symbol" style=" margin-top: 2%;">
+                <form action="{% url 'add_pdf' val3=val batch_name=batch_name batch_id=batch_id sem_id=sem_id %}"  method="POST" enctype="multipart/form-data">
+                   {% csrf_token%}
+                  
+                   {{form.excel_data}}
+                    <!-- <input type="file" value=&#10010 name="add_excel" style="background-color:none;">  -->
+                    <input type="submit" value="add" style="background-color:blue; position:absolute; box-shadow: none; margin-bottom: 5%; margin-left: 2%;">
+                </form>
+              
+            </div>
+        </div>
+    </div>
+</div>
+    
+{%endblock%}

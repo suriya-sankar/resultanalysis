@@ -1,0 +1,49 @@
+{% load static  %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            result analysis of students
+            
+        </title>
+        <link rel="stylesheet" type="text/css" href="{% static '/extendstyle.css'%}"> 
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="header_con">
+               
+                <div class="header">
+                   
+                   <div class="re_anal">
+                       <div class="re_anal_text">
+                           <h2>RESULT ANALYSIS OF SEMESTER</h2>
+                       </div>
+                   </div>
+                   <div class='menu'>
+                       <div class="menu_items">
+                          <li><a href="{% url 'index' %}" style="color: white;">BATCHES</a></li>
+                           <li><a href="{% url 'add_batches'%}" style="color: white;">SIGNIN</a></li>
+                           <li><a href="{% url 'add_batches'%}" style="color: white;">ADD BATCHES</a>  </li>
+                           <li><a href="{% url 'admin:index'%}" style="color: white;">ADMIN</a>  </li>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="page">
+                {% block codes%}
+                {% endblock%}
+            </div>
+        <div class="footer_con">
+            <div class="footer">
+               <div class='footer_content'>
+                   <div class='footer_text1'>
+                     footer
+                   </div>
+               </div>
+            </div>
+        </div>
+        </div>
+
+    </body>
+</html>

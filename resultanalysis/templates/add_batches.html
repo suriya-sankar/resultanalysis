@@ -1,0 +1,20 @@
+{% extends 'extended.html'%}
+{% block codes%}
+<div class="batch_page">
+    <div class="batches_title">
+        <div class="batches_titi">
+           ADD BATCHES
+        </div>
+    </div>
+<div class="form_actions">
+
+
+<form class="add_batch_form" action="{%url 'add_batches' %}" method="post" enctype="multipart/form-data" >
+    {%csrf_token%}
+    {{form}}
+<input type="submit" id= 'submit' value="CREATE">
+
+</form>
+</div>
+</div>
+{%endblock%}

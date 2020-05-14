@@ -1,0 +1,27 @@
+{%extends 'extended.html'%}
+{%load static%}
+{%block codes%}
+<form action={%url 'upload_pdf'%} method="POST" enctype="multipart/form-data">
+{%csrf_token%}
+<input type="file" value="upload pdf" id="upload_pdf" name="upload_pdf">
+<input type="submit" value="upload">
+</form>
+<!-- <table cellspacing=30px style="overflow: scroll;">
+{%for ll in tables%}
+
+{%for row in ll%}
+<br/>
+<tr >
+  
+
+{%for cell in row%}
+<td style="min-width: 30px;">
+{{cell}}<br>
+</td>
+{%endfor%}
+</tr>
+{%endfor%}
+{%endfor%}
+</table> -->
+{{tables}}
+{%endblock%}

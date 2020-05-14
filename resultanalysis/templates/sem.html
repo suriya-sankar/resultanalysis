@@ -1,0 +1,64 @@
+{% extends 'extended.html'%}
+{%load static %}
+
+{%block codes%}
+<div class="batch_page">
+  
+        <div class="batches_title">
+           <div class="batches_titi">
+              SEMESTER LIST
+           </div>
+        </div>
+    <div class="batch_details_con">
+        <div class="batch_details">
+         <div class="cont_batch_details">
+             <h2>BATCH DETAILS</h2>
+         </div>
+         <div class="cont_other_details">
+             <div class="cont_batch_name">
+                 <h4>BATCH NAME:</h4>
+                  <H5>{{batch_details.batch_name}}</H5>
+                     
+                        
+             </div>
+             <div class="cont_batch_years">
+                 <h4>ACCADEMY YEARS:</h4>
+                 <h5>{{batch_details.starting_year}}-{{batch_details.ending_year}}</h5>
+             </div>
+             <div class="cont_batch_department" >
+                <h4>DEPARTMENT:</h4>
+                <h5>{{batch_details.department}}</h5>
+             </div>
+             <div class="cont_batch_college">
+                <h4>COLLEGE:</h4>
+                <h5>{{batch_details.college}}</h5>
+             </div>
+             <div class="cont_batch_descrtiption">
+                <h4>DESCRIPTION:</h4>
+                <h5>{{batch_details.description}}</h5>
+             </div>
+         </div>
+        </div>
+    </div>    
+      
+    <div class="sem_list">
+        <div class="grid-container" >
+            <div class="grid-item"><a href="{% url 'add_pdf' val3='semester 1' batch_name=batch_details.batch_name batch_id=batch_details.batch_year_id sem_id=1 %}"><img src="{% static 'sem_list_photos/sem1.png'%}"></a></div>
+            <div class="grid-item"><a href="{% url 'add_pdf' val3='semester 2' batch_name=batch_details.batch_name batch_id=batch_details.batch_year_id sem_id=2 %}"><img src="{% static 'sem_list_photos/sem2.png'%}"></a></div>
+            <div class="grid-item"><a href="{% url 'add_pdf' val3='semester 3' batch_name=batch_details.batch_name batch_id=batch_details.batch_year_id sem_id=3 %}"><img src="{% static 'sem_list_photos/sem3.png'%}"></a></div>
+            <div class="grid-item"><a href="{% url 'add_pdf' val3='semester 4' batch_name=batch_details.batch_name batch_id=batch_details.batch_year_id sem_id=4 %}"><img src="{% static 'sem_list_photos/sem4.png'%}"></a></div>
+            <div class="grid-item"><a href="{% url 'add_pdf' val3='semester 5' batch_name=batch_details.batch_name batch_id=batch_details.batch_year_id sem_id=5 %}"><img src="{% static 'sem_list_photos/sem5.png'%}"></a></div>
+            <div class="grid-item"><a href="{% url 'add_pdf' val3='semester 6' batch_name=batch_details.batch_name batch_id=batch_details.batch_year_id sem_id=6 %}"><img src="{% static 'sem_list_photos/sem6.png'%}"></a></div>
+            <div class="grid-item"><a href="{% url 'add_pdf' val3='semester 7' batch_name=batch_details.batch_name batch_id=batch_details.batch_year_id sem_id=7 %}"><img src="{% static 'sem_list_photos/sem7.png'%}"></a></div>
+            <div class="grid-item"><a href="{% url 'add_pdf' val3='semester 8' batch_name=batch_details.batch_name batch_id=batch_details.batch_year_id sem_id=8 %}"><img src="{% static 'sem_list_photos/sem8.png'%}"></a></div>
+            <div class="grid-item"><a href="{% url 'add_pdf' val3='attempt 1'  batch_name=batch_details.batch_name batch_id=batch_details.batch_year_id sem_id=9 %}"><img src="{% static 'sem_list_photos/attemp1.png'%}"></a></div>
+            <div class="grid-item"><a href="{% url 'add_pdf' val3='attempt 2' batch_name=batch_details.batch_name batch_id=batch_details.batch_year_id sem_id=10 %}"><img src="{% static 'sem_list_photos/attemp2.png'%}"></a></div>
+            <div class="grid-item"><a href="{% url 'add_pdf' val3='attempt 3' batch_name=batch_details.batch_name batch_id=batch_details.batch_year_id sem_id=11 %}"><img src="{% static 'sem_list_photos/attemp3.png'%}"></a></div>
+            <div class="grid-item"><a href="{% url 'add_pdf' val3='attempt 4' batch_name=batch_details.batch_name batch_id=batch_details.batch_year_id sem_id=12 %}"><img src="{% static 'sem_list_photos/attempt4.png'%}"></a></div>
+            <div class="grid-item"><img src="{% static 'sem_list_photos/arrears.png'%}"></div>
+           
+           
+        </div>
+    </div>    
+</div>
+{% endblock%}

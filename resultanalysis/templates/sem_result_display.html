@@ -1,0 +1,68 @@
+   {%extends 'extended.html'%}
+   {%load static%}
+   {%block codes%}
+   <div class="batch_page">
+  
+    <div class="batches_title">
+       <div class="batches_titi">
+          SEMESTER RESULT LIST
+       </div>
+    </div>
+<div class="batch_details_con">
+    <div class="batch_details">
+     <div class="cont_batch_details">
+         <h2>BATCH DETAILS</h2>
+         
+     </div>
+     <div class="cont_other_details">
+         <div class="cont_batch_name">
+             <h4>BATCH NAME:</h4>
+              <H5>{{data.batch_name}}</H5>
+                 
+                    
+         </div>
+         <div class="cont_batch_name">
+            <h4>SEMESTER NUMBER:</h4>
+             <H5>{{data.sem_id}}</H5>
+        </div>
+         </div>
+         </div>
+         </div>
+         <div class="sem_table">
+         
+             <table cellpadding=3 >
+         
+               
+            {% for row in excel_data_file %}
+            
+            <tr >
+           
+            {% for cell in row %}
+            <td style="min-width: 20%;" >
+               <a href="{%url 'individual_page' row_n=row.0 batch_id=data.batch_id %}"> {{ cell }}&nbsp;&nbsp;</a>
+              
+            </td>
+            {% endfor %}
+        
+        </tr>
+        {% endfor %}
+
+   </table>
+  
+         </div>
+         <div class="analysis">
+            <div class="reevaluation_upload">
+               <button>analysis</button>
+              </div>
+           
+           <div class="reevaluation_upload " style="margin-left:0%;background-color: black;color: black;">
+            <a href="{%url 'reevalutation_upload' batch_id=data.batch_id sem_id=data.sem_id batch_name=data.batch_name %}">reevaluation_upload</a>
+                    
+            
+           
+        </div>
+        
+        
+         </div>
+         
+   {%endblock%}

@@ -1,0 +1,717 @@
+html,h1,h4,h5,ul,li,body,a{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration-style: none;
+  }
+  
+.container
+{
+    background:blue;
+   position: relative;
+    width:80%;
+    margin: auto;
+    
+}
+.container .header_con
+{
+    width: 100%;
+    float: left;
+    
+    background: #000033;
+}
+.container .header_con .header
+{
+    width: 100%;
+    float: left;
+ 
+}
+.container .header_con .header .re_anal
+{
+   
+    width: 50%;
+    margin: auto;
+    color: white;
+    
+}
+.container .header_con .header .re_anal .re_anal_text
+{
+    width: 100%;
+   
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container .header_con .header .menu
+{
+    width:30%;
+    float:right;
+    margin-bottom: 1%;
+
+}
+.container .header_con .header .menu .menu_items
+{
+    width:100%;
+    
+    color:white;
+}
+a:link{
+    text-decoration:none;
+    text-decoration-color: white;
+}
+
+.container .header_con .header .menu .menu_items li
+{
+    
+    float:left ;
+    font-weight: 700;
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 1% 3%;
+    color:white;
+}
+.container .footer_con
+{
+    width: 100%;
+    float: left;
+    bottom:0;
+    margin-top: 4%;
+    background: #000033;
+}
+.container .footer_con .footer
+{
+    width: 100%;
+    float: left;
+}
+.container .footer_con .footer .footer_content
+{
+    width: 50%;
+    margin: auto;
+    color: white;   
+ padding: 2%;
+}
+
+.container .footer_con .footer .footer_content .footer_text1
+{
+    width: 100%;
+   
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.container .page
+{
+    float:left;
+    width: 100%;
+    min-height: 600px;
+    background-color: honeydew;
+}
+
+.container .page .batch_page
+{
+    
+    float:left;
+    width: 100%;
+    min-height: 600px;
+  
+}
+.container .page .batch_page .batches_title
+{ 
+    width: 100%;
+    margin-top: 3%;
+    /* background-color: yellow; */
+    color: black;
+    font-weight: 900;
+    font-size: 30px;
+    align-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container .page .batch_page .batches_title .batches_titi
+{ 
+    width:35%;
+   margin:auto;
+ 
+   text-align: center;
+}
+.container .page .batch_page .batch_div
+{
+    margin-top: 5%;
+    padding:2%;
+    min-height: 320px;
+    width:20%;
+    border-radius: 4%;
+    float: left;
+    background-color:#E0E0E0;
+     /* background-color:red; */
+    margin-left: 7%;
+  
+}
+.container .page .batch_page .batch_div .batch_img
+{
+    
+   max-height:40%;
+    width: 100%;
+
+}
+.container .page .batch_page .batch_div .batch_img .batch_img_img
+{
+    width:100%;
+    max-height:230px;
+    overflow: hidden;
+    align-items: center;
+    
+}
+
+.container .page .batch_page .batch_div .batch_img .batch_img_img img{
+    width: 100%;
+    height: 100%;
+}
+.container .page .batch_page .batch_div .batch_img .batch_img_img  :hover{
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+.container .page .batch_page .batch_div  .batch_details
+{
+    margin-top: 2%;
+   
+}
+.container .page .batch_page .batch_div  .batch_details .batch_name
+{
+    color: black;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container .page .batch_page .batch_div  .batch_details .batch_years
+{
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container .page .batch_page .batch_div  .batch_details .batch_depart_clg
+{   
+    margin-top: 1%;
+    color: black;
+    font-weight: 300;
+    font-size: 12px;
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container .page .batch_page .form_actions
+{
+    margin-top: 4%;
+    padding:2%;
+    width:60%;
+    border-radius: 4%;
+   
+     
+    
+    margin-left: 17%;
+    
+}
+.container .page .batch_page .form_actions .add_batch_form
+{
+   
+    width: 100%;
+    
+}
+.container .page .batch_page .form_actions .add_batch_form label[for=id_batch_name]
+{
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 30%;
+}
+.container .page .batch_page .form_actions .add_batch_form label[for=id_starting_year]
+{
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 30%;
+}
+.container .page .batch_page .form_actions .add_batch_form label[for=id_ending_year]
+{
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 30%;
+}
+.container .page .batch_page .form_actions .add_batch_form label[for=id_department]
+{
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 30%;
+}
+.container .page .batch_page .form_actions .add_batch_form label[for=id_college]
+{
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 30%;
+}
+.container .page .batch_page .form_actions .add_batch_form label[for=id_description]
+{
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 30%;
+}
+.container .page .batch_page .form_actions .add_batch_form label[for=id_thumb]
+{
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 30%;
+}
+.container .page .batch_page .form_actions .add_batch_form #id_batch_name
+{ margin-top: 2%;
+    margin-left: 5%;
+    width: 60%;
+    padding:1%;
+    border: 1px solid red;
+    box-shadow:  2px 4px cornsilk;
+}
+.container .page .batch_page .form_actions .add_batch_form #id_starting_year
+{margin-top: 3%;
+    margin-left: 5%;
+    width: 60%;
+    padding:1%;border: 1px solid red;
+    box-shadow:  2px 4px cornsilk;
+}
+.container .page .batch_page .form_actions .add_batch_form #id_ending_year
+{
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 60%;
+    padding:1%;border: 1px solid red;
+    box-shadow:  2px 4px cornsilk;
+}
+.container .page .batch_page .form_actions .add_batch_form #id_department
+{
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 60%;
+    padding:1%;border: 1px solid red;
+    box-shadow:  2px 4px cornsilk;
+}
+.container .page .batch_page .form_actions .add_batch_form #id_college
+{
+    margin-top: 3%;
+    margin-left: 9%;
+    width: 60%;
+    padding:1%;border: 1px solid red;
+    box-shadow:  2px 4px cornsilk;
+}
+.container .page .batch_page .form_actions .add_batch_form #id_description
+{
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 60%;
+    padding:1%;
+    height: 100px;border: 1px solid red;
+    box-shadow:  2px 4px cornsilk;
+}
+.container .page .batch_page .form_actions .add_batch_form #id_thumb
+{
+    margin-top: 3%;
+    margin-left: 9%;
+    width: 60%;
+    padding:1%;border: 1px solid red;
+    box-shadow:  2px 4px cornsilk;
+   
+}
+.container .page .batch_page .form_actions .add_batch_form #submit
+{
+    margin-top: 6%;
+    margin-left: 50%; 
+    padding:1%;
+   
+}
+input[type=submit]
+{
+    border-radius:7%;
+    border: none;
+   
+   background-color:steelblue;
+   box-shadow:  5px 3px #888888;
+}
+
+.container .page .batch_page .sem_list
+{
+  
+    width: 100%;
+    float: left;
+}
+
+.container .page .batch_page .sem_list .grid-container
+{
+
+    margin-top: 3%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   padding: 1%;
+   margin-left: 12px;
+}
+.container .page .batch_page .sem_list .grid-container .grid-item 
+{
+  width: 85%;
+  height:85%;
+  padding: 1%; 
+  
+  border-radius: 3%;
+ 
+}
+.container .page .batch_page .sem_list .grid-container .grid-item  img 
+{
+width:100%;
+height:100%;
+
+}
+.container .page .batch_page .sem_list .grid-container .grid-item   :hover
+{
+    transform: scale(1.1);
+    transition-duration: .4s;
+   
+}
+.container .page .batch_page .batch_details_con
+{
+    width:60%;
+    float:left;
+   
+   
+    margin-left: 6%;
+    padding: 1%;
+   
+}
+.container .page .batch_page .batch_details_con .batch_details
+{
+    width: 100%;
+    
+    float: left;
+}
+.container .page .batch_page .batch_details_con .batch_details .cont_batch_details
+{
+    width: 100%;
+    
+    float: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+.container .page .batch_page .batch_details_con .batch_details .cont_other_details
+{
+   margin-top: -2%;
+    width: 100%;
+    float: left;
+}
+.container .page .batch_page .batch_details_con .batch_details .cont_other_details .cont_batch_name
+{
+    width:100%;
+    /* background-color: yellow; */
+   
+    float: left;
+}
+.container .page .batch_page .batch_details_con .batch_details .cont_other_details .cont_batch_years
+{
+    width:100%;
+  
+    float: left;
+}
+.container .page .batch_page .batch_details_con .batch_details .cont_other_details .cont_batch_department
+{
+    width:100%;
+  
+    float: left;
+}
+.container .page .batch_page .batch_details_con .batch_details .cont_other_details .cont_batch_college
+{
+    width:100%;
+  
+    float: left;
+}
+.container .page .batch_page .batch_details_con .batch_details .cont_other_details  h4{
+    width:20%;
+   padding-top: 1%;
+   
+    float: left;
+    font-size: 12px;
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.container .page .batch_page .batch_details_con .batch_details .cont_other_details  h5
+{
+    width:50%;
+    padding-top: 1%;
+    float: left;
+    font-stretch: condensed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.container .page .batch_page .page_details
+{
+    margin-top: 4%;
+    width: 100%;
+    float: left;
+}
+.container .page .batch_page   .page_details .sad_emoji_con
+{max-height: 300px;
+    width: 30%;
+    margin:auto;
+    
+    background-color: yellow;
+
+}
+.container .page .batch_page .page_details .sad_emoji_con .sad_emoji{
+    width:100%;
+    float:left;
+    
+}
+.container .page .batch_page .page_details .sad_emoji_con .sad_emoji img
+{
+    
+  height:100%;
+  width:100%;
+}
+
+.container .page .batch_page .page_details .upload_con
+{
+    width: 70%;
+    margin-left: 20%;
+    float: left;
+   
+}
+.container .page .batch_page .page_details .upload_con .upload{
+    width: 100%;
+    float:left;
+  margin-left: 19%;
+}
+.container .page .batch_page .page_details .upload_con .upload h5{
+    width:50%;
+    padding-top: 1%;
+    float: left;
+    font-size: 15px;
+    text-align: center;
+    font-stretch: condensed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.container .page .batch_page .page_details .plus_symbol
+{
+    width: 30%;
+    margin-left: 38%;
+  
+    font-size: 100px;
+}
+.container .page .batch_page .sem_table
+{
+    
+    width: 100%;
+    float: left;
+    overflow: scroll;
+  
+   
+}
+.container .page .batch_page .sem_table table
+{
+    
+    min-width: 20%;
+    float: left;
+     margin-top: 5%;
+     margin-left: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:2%;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+.container .page .batch_page .sem_table table tr
+{
+    border:1px solid black;
+    
+    
+}
+
+.container .page .batch_page .sem_table table :nth-child(1) tr
+{
+    text-align: center;
+    font-weight: 00;
+    
+}
+
+.container .page .batch_page .sem_table table tr td
+{
+
+background-color: yellow;
+border:1px solid black;
+
+
+}
+.container .page .batch_page .batches_title  .batches_extended_title
+{
+    width=100%;
+    /* background-color: yellow; */
+    text-align: center;
+    margin-top: -4%;
+}
+.container .page .batch_page .batches_title  .batches_extended_title h6{
+  font-size: 20px; 
+}
+
+.container .page .batch_page .batch_details_con .batch_details .student_details_con
+{
+    background-color: aliceblue;
+    width:60%;
+    float: left;
+    padding: 2%;
+    border-bottom: 2px solid black;
+}
+
+.container .page .batch_page .batch_details_con .batch_details .student_details_con .student_name
+{
+    width:100%;
+    float: left;
+    font-size: 170%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container .page .batch_page .batch_details_con .batch_details .student_details_con .student_register_no
+{
+    width:100%;
+    float:left;
+    font-size: 140%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container .page .batch_page .batch_details_con .batch_details .student_details_con .depatment
+{
+    width:40%;
+    float:left;
+    font-size: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container .page .batch_page .batch_details_con .batch_details .student_details_con .student_batch_year
+{
+    width:60%;
+    float:left;
+    font-size: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container .page .batch_page .batch_details_con .batch_details .student_details_con .student_clg
+{
+    width:100%;
+    float:left;
+    font-size: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container .page .batch_page .batch_details_con .batch_details .sem_details_con
+{
+    width: 100%;
+    float: left;
+    margin-top: 4%;
+    padding: 3%;
+}
+.container .page .batch_page .batch_details_con .batch_details .sem_details_con .sem_details{
+    width:100%;
+    float: left;
+}
+
+.container .page .batch_page .batch_details_con .batch_details .sem_details_con .sem_details .single_sem_result_con
+{
+    width:100%;
+    float:left;
+    padding: 2%;
+    margin-left: 10%;
+    margin-top: 2%;
+  
+   
+}
+.container .page .batch_page .batch_details_con .batch_details .sem_details_con .sem_details .single_sem_result_con .single_sem_result{
+    width: 100%;
+    float: left;
+   
+}
+.container .page .batch_page .batch_details_con .batch_details .sem_details_con .sem_details .single_sem_result_con .single_sem_result table 
+{
+    
+    min-width: 20%;
+    float: left;
+     margin-top: 5%;
+     margin-left: 8%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:2%;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+
+.container .page .batch_page .batch_details_con .batch_details .sem_details_con .sem_details .single_sem_result_con .single_sem_result table tr
+{
+    border:1px solid black;
+    
+    
+}
+
+.container .page .batch_page .batch_details_con .batch_details .sem_details_con .sem_details .single_sem_result_con .single_sem_result table :nth-child(1) tr
+{
+    text-align: center;
+    font-weight: 00;
+    
+}
+
+.container .page .batch_page .batch_details_con .batch_details .sem_details_con .sem_details .single_sem_result_con .single_sem_result table tr td
+{
+
+background-color: yellow;
+border:1px solid black;
+
+
+}
+.container .page .batch_page .batch_details_con .batch_details .sem_details_con .sem_details .single_sem_result_con .single_sem_result .semester_number
+{
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 15px;
+   width:fit-content ;
+   margin-left: 57%;
+   padding: .5%;
+   margin-top: 5%;
+   margin-bottom: -2%;
+   box-shadow: 0px 2px grey;
+  font-style: oblique;
+  border-bottom: 1px solid black;
+    
+}
+.container .page .batch_page .analysis
+{
+  
+    width: fit-content;
+    margin-left: 80%;
+    margin-top: 3%;
+    z-index: 8888;
+    
+}
+
+.container .page .batch_page .analysis .reevaluation_upload
+{
+    /* Green */
+    /* background-color:black; */
+    width: fit-content;
+    margin-left: 34%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    z-index: 8888;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+  
+    font-size: 15px;
+  
+    
+}
+.container .page .batch_page .analysis .reevaluation_upload button
+{
+
+    background-color:black;
+  border: none;
+  color: white;
+  padding: 3%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+
+ 
+  
+  cursor: pointer;
+}
+
